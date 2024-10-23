@@ -1,0 +1,74 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1e252d;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h2 {
+    color: #a8a8a8;
+    margin-bottom: 20px;
+}
+
+form {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    margin: 10px 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #ddd; /* Contorno gris claro */
+    border-radius: 0; /* Sin bordes redondeados para forma rectangular */
+    transition: border 0.3s;
+    box-sizing: border-box; /* Asegura que el padding se incluya en el ancho total */
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #007bff; /* Cambia el color del borde al enfocar */
+    outline: none; /* Quita el contorno predeterminado del navegador */
+}
+
+button {
+    background-color: white; /* Fondo blanco */
+    color: black; /* Texto negro */
+    border: 2px solid black; /* Contorno negro */
+    padding: 10px;
+    border-radius: 0; /* Sin bordes redondeados para forma rectangular */
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+    width: 100%;
+}
+
+button:hover {
+    background-color: black; /* Cambia a negro al pasar el ratón */
+    color: white; /* Texto blanco al pasar el ratón */
+}
+
+p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+#message, #registerMessage {
+    color: red;
+    font-size: 14px;
+}
